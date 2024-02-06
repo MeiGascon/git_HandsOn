@@ -24,13 +24,13 @@ if re.search('^[ACGTU]+$', args.seq): # comprueba si la secuencia de entrada es 
     else:
         print ('The sequence can be DNA or RNA') # si secuencia no contiene ni T ni U (pero sí A,C,G)
 else:
-    print ('LA SECUENCIA NO ES NI DNA NI RNA')#!/usr/bin/env python # si la secuencia contiene cualquier otro caracter
+    print ('The secuence is neither DNA nor RNA')#!/usr/bin/env python # si la secuencia contiene cualquier otro caracter
 
 if args.motif: #si se ha proporcionado un motif
 	args.motif = args.motif.upper()
 	print(f'Motif search enabled: looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
 	if re.search(args.motif, args.seq): #busca el motif dentro de la secuencia
-		print("motif ENCONTRADO")
+		print("motif found")
 
 	else:
-		print("No se ha encontrado el motif")
+		print("motif not found")
