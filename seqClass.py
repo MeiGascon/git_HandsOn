@@ -30,7 +30,7 @@ if args.motif: #si se ha proporcionado un motif
 	args.motif = args.motif.upper()
 	print(f'Motif search enabled: looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
 	if re.search(args.motif, args.seq): #busca el motif dentro de la secuencia
-		print("motif FOUND")
+		print("MOTIF FOUND") #esta es la modificación que he hecho en el fix
 
 	else:
-		print("motif not FOUND")
+		print("MOTIF NOT FOUND") #este es el del fix
